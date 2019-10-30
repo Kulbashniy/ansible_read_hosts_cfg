@@ -40,7 +40,7 @@ Its save configurations current hosts in DB.
 
 - To recieve all data by *build range* use **-e "build=11-14"**  
 > Ex. ***ansible-playbook start.yml -e "build=11-14"***  
-
+Its dump all configurations where build in range 11-14 as json on
 - To recieve all data by *hash sha1* use **-e "hash=6ac7653bd0a0a09d"**  
 > Ex. ***ansible-playbook start.yml -e "hash=6ac7653bd0a0a09d"***  
 
