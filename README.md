@@ -34,8 +34,8 @@ Basic *start.yml* looks:
 > You dont need to change PYTHONPATH in *start.yml* if you setup with default roles path (setup without argument)
 
 # Usage
-Run:
-> *ansible-playbook start.yml*  
+- Run:
+> **ansible-playbook start.yml**  
 Its save configurations current hosts in DB.  
 
 - To recieve all data by *build range* use **-e "build=11-14"**  
