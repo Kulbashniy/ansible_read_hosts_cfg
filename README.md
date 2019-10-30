@@ -23,25 +23,25 @@ First if you setup not default role dir - change **tasks/main.yml**
 You can use **start.yml** file in repo to start project or create new **.yml** file.  
 
 Basic *start.yml* looks:
->- hosts: ***your_host_group***
-  environment:
-    PYTHONPATH: ***"/path/to/roles/manage_build_data/support_files"***
-  roles:
-    - role: manage_build_data
+> hosts: ***your_host_group***  
+  environment:  
+    PYTHONPATH: ***"/path/to/roles/manage_build_data/support_files"***  
+  roles:  
+      role: manage_build_data  
       path_yml: ***path/to/yml/files/on/hosts/name.yml***
-
+  
 > You dont need to change PYTHONPATH in *start.yml* if you setup with default roles path (setup without argument)
 
 # Usage
 Run:
-> *ansible-playbook start.yml*
+> *ansible-playbook start.yml*  
 Its save configurations current hosts in DB.  
 
-To recieve all data by *build range* use **-e "build=11-14"**  
+- To recieve all data by *build range* use **-e "build=11-14"**  
 > Ex. *ansible-playbook start.yml -e "build=11-14"*
 
-To recieve all data by *hash sha1* use **-e "hash=6ac7653bd0a0a09d"**  
+- To recieve all data by *hash sha1* use **-e "hash=6ac7653bd0a0a09d"**  
 > Ex. *ansible-playbook start.yml -e "hash=6ac7653bd0a0a09d"*
 
-You can use the both *extra-vars*  
+- You can use the both *extra-vars*  
 > Ex. *ansible-playbook start.yml -e "build=11-14 hash=6ac7653bd0a0a09d"*
