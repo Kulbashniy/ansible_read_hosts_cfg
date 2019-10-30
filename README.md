@@ -35,14 +35,14 @@ Basic *start.yml* looks:
 
 # Usage
 - Run:
-> **ansible-playbook start.yml**  
+> ***ansible-playbook start.yml***  
 Its save configurations current hosts in DB.  
 
 - To recieve all data by *build range* use **-e "build=11-14"**  
-> Ex. *ansible-playbook start.yml -e "build=11-14"*
+> Ex. ***ansible-playbook start.yml -e "build=11-14"***  
 
 - To recieve all data by *hash sha1* use **-e "hash=6ac7653bd0a0a09d"**  
-> Ex. *ansible-playbook start.yml -e "hash=6ac7653bd0a0a09d"*
+> Ex. ***ansible-playbook start.yml -e "hash=6ac7653bd0a0a09d"***  
 
 - You can use the both *extra-vars*  
-> Ex. *ansible-playbook start.yml -e "build=11-14 hash=6ac7653bd0a0a09d"*
+> Ex. ***ansible-playbook start.yml -e "build=11-14 hash=6ac7653bd0a0a09d"***
