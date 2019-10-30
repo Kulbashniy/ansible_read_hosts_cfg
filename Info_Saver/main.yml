@@ -1,0 +1,30 @@
+- name: run the module
+  collect_node_info:
+    path_to_yaml: '{{ path_yml}}'
+  register: node_info
+- name: run save json
+  local_action:
+    module: save_json_to_db
+    node_inf: '{{ node_info }}'
+    path_to_cfg: 'etc/ansible/roles/manage_build_data/support_files/config.txt'
+- name: run find builds range
+  local_action:
+    module: find_builds
+    path_to_cfg: 'etc/ansible/roles/manage_build_data/support_files/config.txt'
+    builds_range: '{{ build }}'
+  run_once: true
+  register: find_build_out
+- debug: msg="{{ find_build_out.assembly_list }}"
+  run_once: true
+  when: build is defined
+
+- name: run find by hash
+  local_action:
+    module: find_hash
+    path_to_cfg: 'etc/ansible/roles/manage_build_data/support_files/config.txt'
+    hash: '{{ hash }}'
+  run_once: true
+  register: find_hash_out
+- debug: msg="{{ find_hash_out.assembly_list }}"
+  run_once: true
+  when: hash is defined
