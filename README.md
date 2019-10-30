@@ -39,10 +39,12 @@ Basic *start.yml* looks:
 Its save configurations current hosts in DB.  
 
 - To recieve all data by *build range* use **-e "build=11-14"**  
+Check local DB file on main host
 > Ex. ***ansible-playbook start.yml -e "build=11-14"***  
 Its dump all configurations where build in range 11-14 as json on console    
 
 - To recieve all data by *hash sha1* use **-e "hash=6ac7653bd0a0a09d"**  
+Check local DB file on main host
 > Ex. ***ansible-playbook start.yml -e "hash=6ac7653bd0a0a09d"***  
 Its dump all configurations where hash coincide with hash agrument as json on console  
 
