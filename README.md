@@ -23,7 +23,7 @@ First if you setup not default role dir - change **tasks/main.yml**
 You can use **start.yml** file in repo to start project or create new **.yml** file.  
 
 Basic *start.yml* looks:
-- hosts: ***your_host_group***
+>- hosts: ***your_host_group***
   environment:
     PYTHONPATH: ***"/path/to/roles/manage_build_data/support_files"***
   roles:
