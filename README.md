@@ -6,9 +6,10 @@ You need already install Ansible>=2.8, configure it and have configure hosts. An
 
 # Setup
 Run bash-script ***setup.sh*** it should run from the **dir with this script and as sudo-user**.  
-*setup.sh* have one optional positional argument - ansible roles dir  
+- *setup.sh* have one optional positional argument - ansible roles dir  
 By default path to roles dir - **/etc/ansible/roles**  
-> Ex. ***sudo ./setup.sh /path/to/roles/dir***  
+> Ex. ***sudo ./setup.sh***    
+> Ex. ***sudo ./setup.sh /path/to/roles/dir***    
 It will be create a role in roles dir with all needed files.  
 
 By defaults:  
