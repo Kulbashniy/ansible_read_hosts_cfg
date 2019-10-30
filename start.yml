@@ -1,0 +1,6 @@
+- hosts: all
+  environment:
+    PYTHONPATH: "/etc/ansible/roles/manage_build_data/support_files"
+  roles:
+    - role: manage_build_data
+      path_yml: /home/vlad/Desktop/project/inf.yml
