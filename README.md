@@ -10,6 +10,7 @@ Run bash-script ***setup.sh*** it should run from the **dir with this script and
 By default path to roles dir - **/etc/ansible/roles**  
 > Ex. ***sudo ./setup.sh /path/to/roles/dir***  
 It will be create a role in roles dir with all needed files.  
+
 By defaults:  
 - Role name - **manage_build_data**
 - DB path - **.../"role_name"/support_files/db**
